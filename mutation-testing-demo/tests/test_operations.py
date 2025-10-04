@@ -69,42 +69,42 @@ class TestCalculator:
         assert self.calc.is_prime(7) is True
         # Não testa números compostos, casos especiais - mutantes sobreviverão
 
-def test_subtract(self):
-    assert self.calc.subtract(5, 3) == 2
-    assert self.calc.subtract(1, 1) == 0
-    assert self.calc.subtract(-2, -5) == 3
-
-def test_is_even(self):
-    assert self.calc.is_even(2) is True
-    assert self.calc.is_even(3) is False
-    assert self.calc.is_even(0) is True
-
-def test_min_of_three(self):
-    assert self.calc.min_of_three(1, 2, 3) == 1
-    assert self.calc.min_of_three(3, 2, 1) == 1
-    assert self.calc.min_of_three(2, 2, 2) == 2
-
-def test_power(self):
-    assert self.calc.power(2, 3) == 8
-    assert self.calc.power(5, 0) == 1
-    assert self.calc.power(10, 1) == 10
-
-def test_compare_numbers(self):
-    assert self.calc.compare_numbers(5, 3) == 1
-    assert self.calc.compare_numbers(3, 5) == -1
-    assert self.calc.compare_numbers(4, 4) == 0
-
-def test_is_in_range(self):
-    assert self.calc.is_in_range(5, 1, 10) is True
-    assert self.calc.is_in_range(0, 1, 10) is False
-    assert self.calc.is_in_range(10, 1, 10) is True
-
-def test_calculate_discount(self):
-    assert self.calc.calculate_discount(100, 10) == 90
-    assert self.calc.calculate_discount(200, 50) == 100
-    assert self.calc.calculate_discount(50, 0) == 50
-
-def test_count_digits(self):
-    assert self.calc.count_digits(12345) == 5
-    assert self.calc.count_digits(0) == 1
-    assert self.calc.count_digits(-789) == 3
+    def test_subtract(self):
+        assert self.calc.subtract(5, 3) == 2
+        assert self.calc.subtract(1, 1) == 0
+        assert self.calc.subtract(-2, -5) == 3
+    
+    def test_is_even(self):
+        assert self.calc.is_even(2) is True
+        assert self.calc.is_even(3) is False
+        assert self.calc.is_even(0) is True
+    
+    def test_min_of_three(self):
+        assert self.calc.min_of_three(1, 2, 3) == 1
+        assert self.calc.min_of_three(3, 2, 1) == 1
+        assert self.calc.min_of_three(2, 2, 2) == 2
+    
+    def test_power(self):
+        assert self.calc.power(2, 3) == 8
+        assert self.calc.power(5, 0) == 1
+        assert self.calc.power(10, 1) == 10
+    
+    def test_compare_numbers(self):
+        assert self.calc.compare_numbers(5, 3) == 1
+        assert self.calc.compare_numbers(3, 5) == -1
+        assert self.calc.compare_numbers(4, 4) == 0
+    
+    def test_is_in_range(self):
+        assert self.calc.is_in_range(5, 1, 10) is True
+        assert self.calc.is_in_range(0, 1, 10) is False
+        assert self.calc.is_in_range(10, 1, 10) is True
+    
+    def test_calculate_discount(self):
+        assert self.calc.calculate_discount(100, 10) == 90
+        assert self.calc.calculate_discount(200, 50) == 100
+        assert self.calc.calculate_discount(50, 0) == 50
+    
+    def test_count_digits(self):
+        assert self.calc.count_digits(12345) == 5
+        assert self.calc.count_digits(0) == 1
+        assert self.calc.count_digits(-789) == 3
